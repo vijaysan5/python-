@@ -16,12 +16,12 @@ with open("VS_Base.text", 'r') as file:
     print(look)
     print(file.readline())
 '''
-""" # Create San.Bio Folder
-San_1=open("San.Bio", 'x')
+# Create San.Bio Folder
+"""San_1=open("San.Bio", 'x')
 print("Bio Page is created")
 """
-""" #San BIO DATA
-with open("San.Bio",'w') as bio:
+# San BIO DATA
+"""with open("San.Bio",'w') as bio:
     bio.write("BIO DATA")
     bio.write("\n Name   : SANGAVI A")
     bio.write("\n Mobile : 86xxxxxx27")
@@ -29,12 +29,34 @@ with open("San.Bio",'w') as bio:
     bio.write("\n Mail ID: am.xxx@gmail.com")
     print("San Bio is Created")
 """
-"""Detailz
-Detailz=open ("San.Bio", 'w')
+# Detailz 
+"""Detailz=open ("San.Bio", 'w')
 Detailz.write("  NAME       PHONE     QUALIFICATION  JOINING")
 Detailz.write("\nSandhiya   91xxxxxx98    M.Sc.,       03/2021")
 Detailz.write("\nDhanvi     98xxxxxx09    M.Com.,      12/2023")
 Detailz.write("\nHarini     74xxxxxx87    HSC          12/2022")
 Detailz.write("\nJenifer    93xxxxxx23    MBA          05/2025")
+"""
+#Delete Option
+"""import os
+os.remove("VS_Base copy.text")"""
+
+#Error > try\except\finally
+"""try:
+    san = open("D:\Sangavi A\San Fold - Python\python new as\File Handling_san\VS_Base.text")
+    ABC = san.read()
+    print(ABC)
+    print("folder is open")
+except:
+    print("folder is not such")
+finally:
+    print("Completed")"""
+
+# encode() to decode()
+"""x=("Happy Birthday")         # decode
+abc=x.encode()
+print(abc)                      # encode
+y=abc.decode()
+print(y)                    # decode
 """
 
