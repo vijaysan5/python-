@@ -163,5 +163,46 @@ class Wellwiz(FileHandle, visible):
 Username = Wellwiz("Happy Forever")
 Username.livein()"""
 
+##______Ex_:
+"""class Employ_Data:
+    def __init__(self, Name, ID_number, Position, Company):
+        self.N = Name
+        self.ID = ID_number
+        self.Pos = Position
+        self.Com = Company
+    def detaiz(self):
+        print(f'Name: {self.N}, ID.Number: {self.ID}, Post: {self.Pos}, Company: {self.Com}')
+
+class Employ_College:
+    def __init__(self, Persentage, College_name):
+        self.Per = Persentage
+        self.CN = College_name
+    def cg_detailz(self):
+        print(f'Persentage: {self.Per}, College Name: {self.CN}')
+class Employ_School:
+    def __init__(self, SSLC_Mark, SSLC_School, HSC_Mark, HSC_School):
+        self.sslc = SSLC_Mark
+        self.sslcs = SSLC_School
+        self.hsc = HSC_Mark
+        self.hscs = HSC_School
+    def School_detailz(self):
+        print(f'SSLC: {self.sslc}, School: {self.sslcs}')
+        print(f'HSC School Data     ==> HSC: {self.hsc}, School: {self.hscs}')
+
+class Employ_Detailz(Employ_Data, Employ_College, Employ_School):
+    def Full(self):
+        Data = Employ_Data.detaiz(self)
+        College = Employ_College.cg_detailz(self)
+        School = Employ_School.School_detailz(self)
+        return (Data, College, School)
+Dtz = Employ_Detailz("Francis", "5A0814", "Ass. Manager", "DOS.Pv.ltd")
+Dtz_c = Employ_College("85%", "Aadhi's Arts and Science College")
+Dtz_s = Employ_School("409", "DD Hr. Sec. School", "578", "Sara Metric. Hr. Sec. School")
+print("Employ Company Data", end=" ==> ")
+print(Dtz.detaiz())
+print("College Data", end="        ==> ")
+print(Dtz_c.cg_detailz())
+print("SSLC School Data", end="    ==> ")
+print(Dtz_s.School_detailz())"""
 
 
